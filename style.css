@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+html, body, h1, h2, h3, h4, table, th, td, tr,
+header, main, footer, aside, nav, section{
+	padding: 0px;
+	margin: 0px;
+}
+
+article, aside, nav, main, header, footer, section{
+	display: block;
+}
+
+body{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: helvetica,arial,sans-serif;
+	font-size: 15px;
+}
+
+nav{
+	margin-top: 1px;
+	background-color: rgb(81,105,143);
+	padding: 5px;
+}
+
+li a{
+	color: white;
+	text-decoration: none;
+}
+
+nav li{
+	display: inline;
+	margin-right: 10px;
+	font-size: 18px;
+	font-variant: uppercase;
+}
+
+header{
+	background-color: rgb(212,122,115);
+	padding: 5px;
+	color: white;
+	text-align: left;
+}
+
+main{
+	margin-bottom: 25px;
+}
+
+.welcome{
+	color: rgb(81,105,142);
+	font-size: 32px;
+	text-align: center;
+	padding-top: 250px;
+	padding-bottom: 250px;
+}
+caption{
+	padding-left:15px;
+	padding-top: 15px;
+}
+
+footer{
+	clear: both;
+	text-align: left;
+	background-color: rgb(212,122,115);
+	padding: 5px;
+	color: white;
+}
+table{
+	border-spacing: 15px;
+}
+
+th{
+	text-align: left;
+	border-style: none none solid none;
+}
+td{
+	text-align: left;
+	border-style: none none solid none;
+}
+
+.contact-section{
+	width:50%;
+	padding-top: 100px;
+	padding-bottom: 250px;
+	float: left;
+}
+
+.maps{
+	width:50%;
+	float:right;
+	padding-top: 100px;
+}
+
+.link {
+	text-decoration: none;
+	color: black;
+
+}
+
+.left{
+	width:50%;
+	float: left;
+}
+
+.right{
+	float: right;
+	padding-top: 15px;
+	padding-right: 20px;
+}
+
+.company_Logo{
+	padding: 5px;
+}
