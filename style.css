@@ -43,17 +43,16 @@ header{
 	text-align: left;
 }
 
-main{
-	margin-bottom: 25px;
-}
-
 .welcome{
 	color: rgb(81,105,142);
 	font-size: 32px;
+	padding-top: 220px;
+	padding-bottom: 220px;
 	text-align: center;
-	padding-top: 250px;
-	padding-bottom: 250px;
+	background-image: url("media/images/Back.png");
+	background-size: 960px 500px;
 }
+
 caption{
 	padding-left:15px;
 	padding-top: 15px;
@@ -66,6 +65,7 @@ footer{
 	padding: 5px;
 	color: white;
 }
+
 table{
 	border-spacing: 15px;
 }
@@ -74,39 +74,27 @@ th{
 	text-align: left;
 	border-style: none none solid none;
 }
+
 td{
 	text-align: left;
 	border-style: none none solid none;
 }
 
 .contact-section{
-	width:50%;
-	padding-top: 100px;
-	padding-bottom: 250px;
+	margin-top: 15%;
+	margin-bottom: 15%;
+	width: 32,5%;
 	float: left;
 }
 
 .maps{
-	width:50%;
-	float:right;
-	padding-top: 100px;
+	width: 67,5%;
+	float: right;
 }
 
 .link {
 	text-decoration: none;
 	color: black;
-
-}
-
-.left{
-	width:50%;
-	float: left;
-}
-
-.right{
-	float: right;
-	padding-top: 15px;
-	padding-right: 20px;
 }
 
 .company_Logo{
