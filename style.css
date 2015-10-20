@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 html, body, h1, h2, h3, h4, table, th, td, tr,
-header, main, footer, aside, nav, section{
+header, main, footer, aside, nav, section,p{
 	padding: 0px;
 	margin: 0px;
 }
@@ -23,16 +23,16 @@ nav{
 	margin-top: 1px;
 }
 
-li a{
-	color: white;
-	text-decoration: none;
-}
-
 nav li{
 	display: inline;
 	margin-right: 10px;
 	font-size: 18px;
 	font-variant: uppercase;
+}
+
+li a{
+	color: white;
+	text-decoration: none;
 }
 
 header{
@@ -49,24 +49,48 @@ caption{
 
 footer{
 	clear: both;
-	text-align: left;
-	background-color: rgb(212,122,115);
-	padding: 5px;
-	color: white;
+	background-color: rgb(221,230,206);
+}
+
+.footerList{
+	display: inline;
+	margin-right: 10px;
+	font-size: 12px;
+}
+li{
+	margin-right: 15px;
+	display: inline;
+}
+#lastChange{
+	float:right;
 }
 
 table{
+	margin-left: auto;
+	margin-right: auto;
 	border-spacing: 15px;
 }
 
 th{
 	text-align: left;
 	border-style: none none solid none;
+	font-size: 18px;
 }
 
 td{
 	text-align: left;
 	border-style: none none solid none;
+	padding:25px;
+	font-size: 14px;
+}
+
+.resultSet{
+	color: rgb(71,115,161);
+	background-color: rgb(221,230,206);
+}
+
+.resultSet .link{
+	color:rgb(212,122,115);
 }
 
 .contact-section{
@@ -83,7 +107,7 @@ td{
 
 .link {
 	text-decoration: none;
-	color: black;
+	color: rgb(71,115,161);
 }
 
 .company_Logo{
@@ -94,4 +118,52 @@ td{
 .logoLink{
 	text-decoration: none;
 	color: white;
+}
+
+.compass{
+}
+
+
+.compass img{
+	width:15%;
+	height:auto;
+	float:left;
+	margin-left: 15%;
+}
+.compass p{
+	font-size: 28px;
+	float:right;
+	margin-right: 20%;
+}
+
+.search{
+	padding:300px;
+	background-image: url("/media/images/searchStock.jpeg");
+	background-size: 100% 100%;
+	text-align: center;
+}
+
+.search p{
+	color: rgb(71,115,161);
+	font-size: 32px;
+	margin-bottom: 3px;
+}
+
+.search input{
+	background-color: rgb(71,115,161);
+}
+
+input[type="text"]{
+	font-size: 18px;
+  	transition: box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="text"].focus {
+  box-shadow: 0 0 3px 1px #969696;
+}
+
+.searchCity{
+	padding: 50px;
+	text-align: center;
 }

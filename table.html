@@ -18,37 +18,43 @@
 		</nav>
 		</header>
 		<main>
-			<section class="left">
-				<table>
-					<caption style="text-align: left">
-						<h3>Journeys made for Barcelona</h3>
-					</caption>
-					<tr>
-						<th scope="col">Name</th>
-						<th scope="col">Location</th>
-						<th scope="col">Time of the year</th>
-						<th scope="col">Price</th>
-						<th scope="col">Creator</th>
-						<th scope="col">Rating</th>
-					</tr>
-					<tr>
-						<td scope="row">Barcelona - The new Way</td>
-						<td>"Geolocation"</td>
-						<td>"Date"</td>
-						<td>800 p.P.</td>
-						<td>
-						<a href="MikeProfile.html">MikeTheMan</a>
-						</td>
-						<td>"include Star Rating here"</td>
-					</tr>
-				</table>
-			</section>
+			<div>
+				<form class="search"action="action_page.php" autocomplete="on">
+					<p>Where do you want to go?</p>
+					<input class"searchField" type="text" name="searchPlace" maxlength="64" autocomplete="off" required>
+				</form>
+			</div>
+			<div class="resultSet">
+			<h2 class="searchCity">Journeys made for Barcelona</h3>
+			<table>
+				<tr>
+					<th scope="col">Name</th>
+					<th scope="col">Location</th>
+					<th scope="col">Time of the year</th>
+					<th scope="col">Price</th>
+					<th scope="col">Creator</th>
+					<th scope="col">Rating</th>
+				</tr>
+				<tr>
+					<td scope="row">Barcelona - The new Way</td>
+					<td><a class="link" href="https://goo.gl/maps/AMKoWDAjb9y" target="_blank">Barcelona</a></td>
+					<td>"Date"</td>
+					<td>800 p.P.</td>
+					<td>
+						<a class="link" href="MikeProfile.html" target="_blank">MikeTheMan</a>
+					</td>
+					<td>"include Star Rating here"</td>
+				</tr>
+			</table>
+			</div>
 		</main>
 		<footer>
-			This website is maintained by Johannes Ebeling <br>
-			Contact me:<br>
-			<br>
-			<a class="link" href="mailto:johannes@ebelingfs.de?subject=Travex Support">johannes@ebelingfs.de</a> 
+			<ul class="footerList">
+				<li><a class="link" href="mailto:johannes@ebelingfs.de?subject=Travex Support">E-Mail</a></li>
+				<li><a class="link" href="subscribe.html">Newsletter</a></li>
+				<li><a class="link" href="impressum.html">Impressum</a></li>
+				<li id="lastChange"> Letzte Änderung 20.10.2015</li>
+			</ul>
 		</footer>
 	</body>
 </html>
