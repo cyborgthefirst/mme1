@@ -179,7 +179,7 @@ td{
 
 .search{
 	padding:300px;
-	background-image: url("/media/images/searchStock.jpeg");
+	background-image: url("media/images/searchStock.jpeg");
 	background-size: 100% auto;
 	text-align: center;
 }
@@ -251,7 +251,7 @@ input[type="text"].focus {
 }
 
 .inputForm{
-	background-image: url("/media/images/formBack.jpg");
+	background-image: url("media/images/formBack.jpg");
 	background-size: 100%;
 	padding:220px;
 }
