@@ -64,6 +64,16 @@ li{
 	float:right;
 }
 
+.resultSet{
+	color: rgb(71,115,161);
+	background-color: rgb(221,230,206);
+	margin-bottom: 10%;
+}
+
+.resultSet .link{
+	color:rgb(212,122,115);
+}
+
 table{
 	margin-left: auto;
 	margin-right: auto;
@@ -85,13 +95,13 @@ td{
 	font-weight: lighter;
 }
 
-.resultSet{
-	color: rgb(71,115,161);
-	background-color: rgb(221,230,206);
+.tableAction{
+	display: inline;
+
 }
 
-.resultSet .link{
-	color:rgb(212,122,115);
+.tableAction input[value="Change"]{
+	margin-left:40%;
 }
 
 .contact-section{
