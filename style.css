@@ -97,13 +97,15 @@ td{
 .contact-section{
 	margin-top: 15%;
 	margin-bottom: 15%;
-	width: 32,5%;
-	float: left;
+	margin-left: 5%;
+	display:inline-block;
+	vertical-align: middle;
 }
 
 .maps{
-	width: 67,5%;
-	float: right;
+	margin-left: 25%;
+	vertical-align: middle;
+	display: inline-block;
 }
 
 .link {
@@ -236,4 +238,16 @@ input[type="text"].focus {
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+
+.inputForm{
+	background-image: url("/media/images/formBack.jpg");
+	background-size: 100%;
+	padding:220px;
+}
+
+.formElements{
+	margin-left: 70%;
+	font-size: 20px;
+	width:40%;
 }
