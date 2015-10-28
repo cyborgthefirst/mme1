@@ -96,12 +96,8 @@ td{
 }
 
 .tableAction{
-	display: inline;
-
-}
-
-.tableAction input[value="Change"]{
-	margin-left:40%;
+    border-style: none;
+	/*display: inline;*/
 }
 
 .contact-section{
