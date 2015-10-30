@@ -66,8 +66,53 @@ footer{
 	float:right;
 }
 
+<<<<<<< HEAD
 .loginField{
 	display: inline;
+=======
+.resultSet{
+	color: rgb(71,115,161);
+	background-color: rgb(221,230,206);
+	margin-bottom: 10%;
+}
+
+.resultSet .link{
+	color:rgb(212,122,115);
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+	border-spacing: 15px;
+}
+
+th{
+	text-align: left;
+	border-style: none none solid none;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+td{
+	text-align: left;
+	border-style: none none solid none;
+	padding:10px;
+	font-size:; 16px;
+	font-weight: lighter;
+}
+
+.tableAction{
+    border-style: none;
+	/*display: inline;*/
+}
+
+.contact-section{
+	margin-top: 15%;
+	margin-bottom: 15%;
+	margin-left: 5%;
+	display:inline-block;
+	vertical-align: middle;
+>>>>>>> 4bdc7636a857cb4d8dba9b8874c95af712769c83
 }
 
 .loginField input[type="text"]{
