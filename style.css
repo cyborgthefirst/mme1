@@ -10,7 +10,18 @@ article, aside, nav, main, header, footer, section{
 	display: block;
 }
 
+header{
+	top:0;
+	position: fixed;
+	width: 100%;
+	background-color: rgb(212,122,115);
+	padding: 5px;
+	color: white;
+	vertical-align: text-bottom;
+}
+
 body{
+	padding-top: 62px;
 	width: auto;
 	margin-left: auto;
 	margin-right: auto;
@@ -35,19 +46,8 @@ li a{
 	text-decoration: none;
 }
 
-header{
-	background-color: rgb(212,122,115);
-	padding: 5px;
-	color: white;
-	vertical-align: text-bottom;
-}
-
-caption{
-	padding-left:15px;
-	padding-top: 15px;
-}
-
 footer{
+	padding: 1%;
 	clear: both;
 	height: 1%;
 }
@@ -57,22 +57,100 @@ footer{
 	margin-right: 10px;
 	font-size: 12px;
 }
-li{
+.footerList li{
 	margin-right: 15px;
 	display: inline;
 }
+
 #lastChange{
 	float:right;
 }
 
-.resultSet{
-	color: rgb(71,115,161);
-	background-color: rgb(221,230,206);
-	margin-bottom: 10%;
+.loginField{
+	display: inline;
 }
 
-.resultSet .link{
-	color:rgb(212,122,115);
+.loginField input[type="text"]{
+	font-size: 10px;
+	display: inline;
+}
+
+.link {
+	text-decoration: none;
+	color: rgb(71,115,161);
+}
+
+.companyLogo{
+	padding: 5px;
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.compassSection{
+	padding:10%;
+	height:25%;
+	background-color: rgb(71,115,161);
+}
+.compass{
+	vertical-align: middle;
+	display:inline-block;
+	margin-left: 10%;
+	width:20%;
+}
+
+.compassText{
+	vertical-align: middle;
+	font-weight: lighter;
+	display:inline-block;
+	font-size:28px;
+	margin-left:20%;
+	color:white;
+}
+
+.quickSection{
+	padding:10%;
+	height:25%;
+	background-color: rgb(212,122,115);
+}
+.quick{
+	vertical-align: middle;
+	display:inline-block;
+	margin-left: 15%;
+	width:20%;
+}
+
+.quickText{
+	vertical-align: middle;
+	font-weight: lighter;
+	display:inline-block;
+	font-size:28px;
+	margin-left:5%;
+	color:white;
+}
+
+.search{
+	padding:300px;
+	background-image: url("media/images/searchStock.jpeg");
+	background-size: 100% auto;
+	text-align: center;
+}
+
+.search input[type="text"]{
+	width: 50%;
+	font-size:22px;
+	margin-top:2.5%;
+	color:grey;
+	text-align: center;
+}
+
+.searchCity{
+	font-size: 32px;
+	font-weight: bold;
+	padding: 50px;
+	text-align: center;
 }
 
 table{
@@ -96,13 +174,36 @@ td{
 	font-weight: lighter;
 }
 
+.resultSet{
+	color: rgb(71,115,161);
+	background-color: rgb(221,230,206);	
+	padding-bottom: 2.5%;
+}
+
+.resultSet .link{
+	color:rgb(212,122,115);
+}
+
 .tableAction{
 	display: inline;
-
+	padding-top:;
 }
 
 .tableAction input[value="Change"]{
 	margin-left:40%;
+}
+
+.inputForm{
+	background-image: url("media/images/formBack.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding:220px;
+}
+
+.formElements{
+	margin-left: 70%;
+	font-size: 20px;
+	width:40%;
 }
 
 .contact-section{
@@ -119,80 +220,6 @@ td{
 	display: inline-block;
 }
 
-.link {
-	text-decoration: none;
-	color: rgb(71,115,161);
-}
-
-.company_Logo{
-	padding: 5px;
-	display: inline-block;
-}
-
-.logoLink{
-	text-decoration: none;
-	color: white;
-}
-
-.compassSection{
-	background-color: rgb(71,115,161);
-	padding-top: 150px;
-	padding-bottom: 150px;
-}
-.compass{
-	vertical-align: middle;
-	display:inline-block;
-	margin-left: 10%;
-	width:20%;
-	height: auto;
-}
-
-.compassText{
-	vertical-align: middle;
-	font-weight: lighter;
-	display:inline-block;
-	font-size:28px;
-	margin-left:20%;
-	color:white;
-}
-
-.quickSection{
-	background-color: rgb(212,122,115);
-	padding-top: 150px;
-	padding-bottom: 150px;
-}
-.quick{
-	vertical-align: middle;
-	display:inline-block;
-	margin-left: 20%;
-	width:20%;
-	height: auto;
-}
-
-.quickText{
-	vertical-align: middle;
-	font-weight: lighter;
-	display:inline-block;
-	font-size:28px;
-	margin-left:10%;
-	color:white;
-}
-
-.search{
-	padding:300px;
-	background-image: url("media/images/searchStock.jpeg");
-	background-size: 100% auto;
-	text-align: center;
-}
-
-.search input[type="text"]{
-	width: 50%;
-	font-size:22px;
-	margin-top:2.5%;
-	color:grey;
-	text-align: center;
-}
-
 input[type="text"]{
 	font-size: 18px;
   	transition: box-shadow 0.3s;
@@ -201,13 +228,6 @@ input[type="text"]{
 input[type="text"]:focus,
 input[type="text"].focus {
   box-shadow: 0 0 3px 1px #969696;
-}
-
-.searchCity{
-	font-size: 32px;
-	font-weight: bold;
-	padding: 50px;
-	text-align: center;
 }
 
 .myButton {
@@ -249,16 +269,4 @@ input[type="text"].focus {
 .myButton:active {
 	position:relative;
 	top:1px;
-}
-
-.inputForm{
-	background-image: url("media/images/formBack.jpg");
-	background-size: 100%;
-	padding:220px;
-}
-
-.formElements{
-	margin-left: 70%;
-	font-size: 20px;
-	width:40%;
 }
