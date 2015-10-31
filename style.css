@@ -270,3 +270,24 @@ input[type="text"].focus {
 	position:relative;
 	top:1px;
 }
+.popup-position{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+#popup-wrapper {
+    margin: 10% auto;
+    width: 40%;
+}
+#popup-container{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+

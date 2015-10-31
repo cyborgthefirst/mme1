@@ -33,10 +33,25 @@
 		<footer>
 			<ul class="footerList">
 				<li><a class="link" href="mailto:johannes@ebelingfs.de?subject=Travex Support">E-Mail</a></li>
-				<li><a class="link" href="subscribe.html">Newsletter</a></li>
+				<li><a id="newsletter" class="link" href="javascript:void(0)">Newsletter</a></li>
 				<li><a class="link" href="impressum.html">Impressum</a></li>
 				<li id="lastChange"> Letzte Änderung 30.10.2015</li>
 			</ul>
 		</footer>
+        <div id="emailpopup" class="popup-position">
+            <div id="popup-wrapper">
+                <div id="popup-container">
+                    <p>Subscribe to the Newsletter</p>
+                    <br>
+                    <form action="emailNewsletter" method="post">
+                        <input type="Text" name="emailNewsletter" placeholder="Your E-mail-Address">
+                        <input class="myButton" type="submit" value="subscribe" >
+                    </form>
+                    <br>
+                    <button class="myButton" id="popup-closebutton">Close</button>
+                </div>
+            </div>
+        </div>
+        <script src="popupNL.js"></script>
 	</body>
 </html>
