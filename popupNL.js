@@ -3,7 +3,7 @@ document.getElementById('popup-closebutton').addEventListener("click", closePopu
 
 var email = document.getElementById('emailInput');
     
-document.getElementById('emailInput').addEventListener('keyup', checkPasswordValidity, false);
+email.addEventListener('keyup', checkPasswordValidity, false);
 
 function openPopup() {
     document.getElementById('emailpopup').style.display = 'block';
@@ -13,13 +13,19 @@ function closePopup() {
 }
 
 function checkPasswordValidity() {
-    email.setCustomValidity('Please enter your email address.');
-    if (email.value=='') {
-        email.setCustomValidity('Please enter your email address.');
+    
+    //regex-validation
+    if (email.value.match(/email/)) {
+        email.setCustomValidity('');
     } else {
-        email.setCustomValidity('a');
+        email.setCustomValidity('has to be "email"');
+    }
+    
+    //css-manipulation
+    if (email.validity.valid) {
+        email.style.color = 'green';
+    } else {
+        email.style.color = 'red';
     }        
-};
-
-
+}
     
