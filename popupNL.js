@@ -15,10 +15,23 @@ function closePopup() {
 function checkPasswordValidity() {
     
     //regex-validation
-    if (email.value.match(/email/)) {
+
+    var error = "Die eingegebene Adresse ";
+
+    if (email.value.match(/[A-Za-z0-9]+@[A-Za-z0-9]+\.[A-Za-z0-9]+/)) {
         email.setCustomValidity('');
+    }else{
+    	email.setCustomValidity("has to be");
+    
     } else {
-        email.setCustomValidity('has to be "email"');
+        if(email.value.match(/.*@.*/)){
+
+        }else{
+        	error = error + "muss ein @ enthalten"
+        }
+        if(email.value.match(/.*\..*/)){
+        	
+        }
     }
     
     //css-manipulation
