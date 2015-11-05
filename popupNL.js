@@ -16,24 +16,32 @@ function checkPasswordValidity() {
     
     //regex-validation
 
-    var error = "Die eingegebene Adresse ";
+    var error = "";
 
-    if (email.value.match(/[A-Za-z0-9]+@[A-Za-z0-9]+\.[A-Za-z0-9]+/)) {
-        email.setCustomValidity('');
-    }else{
-    	email.setCustomValidity("has to be");
-    
+    if (email.value.match(/^[\w%+-.']+@[\w-]+(\.[a-zA-Z]+)+$/)) {
     } else {
-        if(email.value.match(/.*@.*/)){
-
-        }else{
-        	error = error + "muss ein @ enthalten"
-        }
-        if(email.value.match(/.*\..*/)){
-        	
+    	error = error + "That is not an accepted email address. ";
+        if(email.value.match(/@/)){
+            if(email.value.match(/^[+-\w]+?@/)){
+            } else {
+               error = error + "The string before the @ -symbol may only contain &,+ ,- ,. ,' and alphanumeric charachters. ";
+            }
+            if(email.value.match(/^[^@]*@[^@]*$/)){
+            } else {
+               error = error + "Your email address may only contain one @. ";
+            }
+            if(email.value.match(/@[\w-]+(\.[a-zA-Z]+)+$/)){
+            } else {
+               error = error + "The domain of the email was not accepted. ";
+            }            
+        } else {
+        	error = error + "It has to contain one @ -symbol. "
         }
     }
     
+        
+    email.setCustomValidity(error);
+               
     //css-manipulation
     if (email.validity.valid) {
         email.style.color = 'green';
