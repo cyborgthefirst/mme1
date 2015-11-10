@@ -180,10 +180,22 @@ td{
 	padding-bottom: 2.5%;
 }
 
-.resultSet .link{
+.resultSet .locationLink{
+	text-decoration: none;
 	color:rgb(212,122,115);
 }
 
+.hiddenPopup{
+	display:none;
+}
+.openPopup{
+	display: block;
+	width: 100%;
+	margin:2.5% 0;
+	text-align: center;
+	
+}
+	
 .tableAction{
 	display: inline;
 	padding-top:;
