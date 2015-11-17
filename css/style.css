@@ -134,7 +134,7 @@ footer{
 
 .search{
 	padding:300px;
-	background-image: url("media/images/searchStock.jpeg");
+	background-image: url("../media/images/searchStock.jpeg");
 	background-size: 100% auto;
 	text-align: center;
 }
@@ -215,7 +215,7 @@ td{
 }
 
 .inputForm{
-	background-image: url("media/images/formBack.jpg");
+	background-image: url("../media/images/formBack.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	padding:220px;
