@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>MME 1</title>
-		<link href="/css/style.css" rel="stylesheet" type="text/css">
+		<link href="./css/style.css" rel="stylesheet" type="text/css">
 		<script src="http://maps.googleapis.com/maps/api/js"></script>
 	</head>
 	<body>
@@ -20,7 +20,7 @@
 		</header>
 		<main>
 			<div>
-				<form class="search"action="/php/action_page.php" autocomplete="on">
+				<form class="search"action="./php/action_page.php" autocomplete="on">
 					<input type="text" name="searchPlace" placeholder="Where do you want to go?" maxlength="64" autocomplete="off" required>
 					<br><br>
 					<input class="myButton" type="submit" value="Go for it!">
@@ -94,7 +94,7 @@
 					<button class"myButton" id="closeMap">X</button>
 					<div id="maps" style="width:500px;height:380px;"></div>
 				</div>
-				<script src="/js/popupTable.js"></script>
+				<script src="./js/popupTable.js"></script>
 				
 				<div class="tableAction">
 						<input class="myButton" type="button" value="Change" >
@@ -115,7 +115,7 @@
                 <div id="popup-container">
                     <p>Subscribe to the Newsletter</p>
                     <br>
-                    <form action="/php/emailNewsletter.php" method="post"  id="popup-form">
+                    <form action="./php/emailNewsletter.php" method="post"  id="popup-form">
                         <input type="Text" name="emailNewsletter" placeholder="Your email address" id="emailInput" required>
                         <input class="myButton" type="submit" value="subscribe" >
                     </form>
@@ -124,6 +124,6 @@
                 </div>
             </div>
         </div>
-        <script src="/js/popupNL.js"></script>
+        <script src="./js/popupNL.js"></script>
 	</body>
 </html>
