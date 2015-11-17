@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>MME 1</title>
-		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<header>
@@ -17,7 +17,7 @@
 				</ul>
 			</nav>
 		</header>
-		<form class="inputForm" action="action_page.php" autocomplete="on">
+		<form class="inputForm" action="/php/action_page.php" autocomplete="on">
 			<div class="formElements">
 			What would you like do call it?<br>
 			<input type="text" name="travelName" maxlength="32" autocomplete="off" required autofocus><br>
@@ -107,7 +107,7 @@
                 <div id="popup-container">
                     <p>Subscribe to the Newsletter</p>
                     <br>
-                    <form action="emailNewsletter.php" method="post"  id="popup-form">
+                    <form action="/php/emailNewsletter.php" method="post"  id="popup-form">
                         <input type="Text" name="emailNewsletter" placeholder="Your email address" id="emailInput" required>
                         <input class="myButton" type="submit" value="subscribe" >
                     </form>
@@ -125,7 +125,7 @@
                 </div>
             </div>
         </div>
-        <script src="popupNL.js"></script>
-        <script src="TpopupNL.js"></script>
+        <script src="/js/popupNL.js"></script>
+        <script src="/js/TpopupNL.js"></script>
 	</body>
 </html>
