@@ -321,7 +321,10 @@ input[type="text"].focus {
 	width:100%;
 	margin:auto;
 }
-
+.contactForm .contactReqInfo {
+    font-size: 80%;
+    color: gray;
+}
 .contactForm p{
 	font-size: 18px;
 	padding-bottom: 0.5%;
@@ -332,6 +335,4 @@ input[type="text"].focus {
 	width: 20%;
 	min-height: 100px;
 }
-
-
 

@@ -18,18 +18,23 @@
 			</nav>
 		</header>
 		<main>
-		<img id="feedbackQuote" src="../media/images/feedbackQuote.png">
-		<form class="contactForm" action="./php/action_page.php" autocomplete="on">
-		<p>Your Name:</p>
-		<input id="contactName" type="text" name="ContactName" maxlength="32" required autofocus><br><br>
-		<p>Your E-Mail Adress:</p>
-		<input id="contactEMail" type="text" name="ContactEMail">
-		<br>
-		<br>
-		<p>Your Message:</p>
-		<textarea id="contactComment" name="ContactComment"></textarea>
-		</form>
-		</div>
+            <img id="feedbackQuote" src="../media/images/feedbackQuote.png">
+            <form class="contactForm" action="./php/action_page.php" autocomplete="on">
+                <p class="contactReqInfo">Required fields are marked with '*'</p>
+                <p>Your Name <span class="contactReqInfo">*</span> :</p>
+                <input id="contactName" type="text" name="ContactName" maxlength="32" required autofocus>
+                <br>
+                <br>
+                <p>Your E-Mail Adress :</p>
+                <input id="contactEMail" type="text" name="ContactEMail">
+                <br>
+                <br>
+                <p>Your Message <span class="contactReqInfo">*</span> :</p>
+                <textarea id="contactComment" name="ContactComment"></textarea>
+                <br>
+                <br>
+                <input class="myButton" type="submit" value="Submit" >
+            </form>
 		</main>
 		<footer>
 			<ul class="footerList">
@@ -53,6 +58,7 @@
                 </div>
             </div>
         </div>
+        <script src="./js/contactFVali.js"></script>
         <script src="./js/popupNL.js"></script>
 	</body>
 </html>
