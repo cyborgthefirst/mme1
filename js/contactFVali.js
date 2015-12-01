@@ -28,7 +28,7 @@ function checkNameValidity() {
     if (nameVal === ""){//name empty
         nameF.setCustomValidity('The field "Your Name" is required. ');
     }
-    if (nameReVal === ""){//name empty
+    if (nameReVal === ""){//nameRe empty
         nameF.setCustomValidity('The field " Repeat Your Name" is required. ');
     }
     
@@ -61,6 +61,11 @@ function checkNameValidity() {
         nameF.style.color = 'green';
     } else {
         nameF.style.color = 'red';
+    }        
+    if (nameReF.validity.valid) {
+        namereF.style.color = 'green';
+    } else {
+        nameReF.style.color = 'red';
     }        
 }
 
