@@ -63,7 +63,7 @@ function checkNameValidity() {
         nameF.style.color = 'red';
     }        
     if (nameReF.validity.valid) {
-        namereF.style.color = 'green';
+        nameReF.style.color = 'green';
     } else {
         nameReF.style.color = 'red';
     }        
