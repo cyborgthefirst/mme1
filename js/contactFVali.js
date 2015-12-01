@@ -1,6 +1,13 @@
 var nameF = document.getElementById('contactName');
 var nameReF = document.getElementById('contactNameRe');
 var emailF = document.getElementById('contactEMail');
+var textF = document.getElementById('contactComment');
+
+document.getElementById('submit').addEventListener('click',function(){
+    checkNameValidity();
+    checkEmailValidity();
+    checkIfEmpty();
+},false);
 
 //on load set required fields validity false
 
@@ -13,8 +20,8 @@ nameReF.addEventListener('keyup', checkNameValidity, false);
 //nameF.addEventListener('change', function(){
 //}, false);
 
-
 //starts after the first input into the email field
+var email = emailF;
 emailF.addEventListener('keyup', checkEmailValidity, false);
 
 
@@ -24,13 +31,6 @@ function checkNameValidity() {
     var error = "";
     var nameVal = nameF.value;
     var nameReVal = nameReF.value;
-    
-    if (nameVal === ""){//name empty
-        nameF.setCustomValidity('The field "Your Name" is required. ');
-    }
-    if (nameReVal === ""){//nameRe empty
-        nameF.setCustomValidity('The field " Repeat Your Name" is required. ');
-    }
     
     if (nameVal.match(/^[(\w) ]{4,30}$/)) {
     } else {
@@ -45,6 +45,7 @@ function checkNameValidity() {
                 error = error + "The Name is too long. ";
             }
         }
+
     }
 
     if(nameVal !== nameReVal){
@@ -69,48 +70,17 @@ function checkNameValidity() {
     }        
 }
 
-
-function checkEmailValidity() {
-    
-    //regex-validation
-    var error = "";
-    var emVal = emailF.value;
-    
-    if(emVal === ""){
-        //set back state to neither wrong nor right
-        return;
+function checkIfEmpty(){
+     if (nameF.value === ""){//name empty
+        nameF.setCustomValidity('The field "Your Name" is required. ');
     }
-    
-    if (emVal.match(/^[\w%+-.']+@[\w-]+(\.[a-zA-Z]+)+$/)) {
-    } else {
-    	error = error + "That is not an accepted email address. ";
-        if(emVal.match(/@/)){
-            if(emVal.match(/^[+-\w]+?@/)){
-            } else {
-               error = error + "The string before the @ -symbol may only contain &,+ ,- ,. ,' and alphanumeric charachters. ";
-            }
-            if(emVal.match(/^[^@]*@[^@]*$/)){
-            } else {
-               error = error + "Your email address may only contain one @. ";
-            }
-            if(emVal.match(/@[\w-]+(\.[a-zA-Z]+)+$/)){
-            } else {
-               error = error + "The domain of the email was not accepted. ";
-            }            
-        } else {
-        	error = error + "It has to contain one @ -symbol. "
-        }
+    if (nameReF.value === ""){//nameRe empty
+        nameReF.setCustomValidity('The field " Repeat Your Name" is required. ');
     }
-        
-    emailF.setCustomValidity(error);
-    
-    
-    
-    //css-manipulation
-    if (emailF.validity.valid) {
-        emailF.style.color = 'green';
-    } else {
-        emailF.style.color = 'red';
-    }        
-}
-    
+    if(emailF.value === ""){
+        emailF.setCustomValidity('The field "Your E-Mail Adress" is required. ');
+    }
+    if(textF.value === ""){
+        textF.setCustomValidity('The field "Your Message" is required. ');
+    }
+}   

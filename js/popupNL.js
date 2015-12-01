@@ -3,7 +3,7 @@ document.getElementById('popup-closebutton').addEventListener("click", closePopu
 
 var email = document.getElementById('emailInput');
     
-email.addEventListener('keyup', checkPasswordValidity, false);
+email.addEventListener('keyup', checkEmailValidity, false);
 
 function openPopup() {
     document.getElementById('emailpopup').style.display = 'block';
@@ -12,8 +12,7 @@ function closePopup() {
     document.getElementById('emailpopup').style.display = 'none';
 }
 
-function checkPasswordValidity() {
-    
+function checkEmailValidity() {
     //regex-validation
 
     var error = "";
