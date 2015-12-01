@@ -1,15 +1,17 @@
 var nameF = document.getElementById('contactName');
+var nameReF = document.getElementById('contactNameRe');
 var emailF = document.getElementById('contactEMail');
 
 //on load set required fields validity false
 
-//starts after the first input into the email field
+//starts after the first input into any Name field
 nameF.addEventListener('keyup', checkNameValidity, false);
+nameReF.addEventListener('keyup', checkNameValidity, false);
+
 
 //starts after the first input into the email field
-nameF.addEventListener('change', function(){
-    alert("d");
-}, false);
+//nameF.addEventListener('change', function(){
+//}, false);
 
 
 //starts after the first input into the email field
@@ -18,33 +20,40 @@ emailF.addEventListener('keyup', checkEmailValidity, false);
 
 function checkNameValidity() {
     
-    alert("c");
-
     //regex-validation
     var error = "";
     var nameVal = nameF.value;
+    var nameReVal = nameReF.value;
     
     if (nameVal === ""){//name empty
         nameF.setCustomValidity('The field "Your Name" is required. ');
     }
+    if (nameReVal === ""){//name empty
+        nameF.setCustomValidity('The field " Repeat Your Name" is required. ');
+    }
     
-    if (nameVal.match(/^(\w){4,30}$/)) {
+    if (nameVal.match(/^[(\w) ]{4,30}$/)) {
     } else {
         error = error + "This name was not accepted. ";
     	if(nameVal.match(/\W/)){
             error = error + "Only names composed of alpha-numeric charachters (and '_') are accepted. ";
         }else{
             if(nameVal.match(/^\w{1,3}$/)){
-                error = error + "The Name is too short";
+                error = error + "The Name is too short. ";
             }
             if(nameVal.match(/^\w{31,}$/)){
-                error = error + "The Name is too short";
+                error = error + "The Name is too long. ";
             }
         }
     }
-        
+
+    if(nameVal !== nameReVal){
+        nameReF.setCustomValidity("Please make sure this Field matches the one above it. ");
+    }else{
+        nameReF.setCustomValidity("");
+    }
+
     nameF.setCustomValidity(error);
-    
     
     
     //css-manipulation
