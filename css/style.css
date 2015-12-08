@@ -343,3 +343,11 @@ input[type="text"].focus {
 	min-height: 100px;
 }
 
+#price{
+	width: 200px;
+}
+
+#price-menu{
+	width: 200px;
+	font-size: 11px;
+}
