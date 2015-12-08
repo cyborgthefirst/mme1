@@ -68,12 +68,19 @@ footer{
 }
 
 .loginField{
+	margin-left: 25%;
 	display: inline;
+	font-size: 10px;
 }
 
 .loginField input[type="text"]{
 	font-size: 10px;
 	display: inline;
+	width:6%;
+}
+
+#loginButton{
+	font-size: 11px;
 }
 
 .link {
