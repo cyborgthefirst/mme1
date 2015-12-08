@@ -1,0 +1,337 @@
+@charset "UTF-8";
+
+html, body, h1, h2, h3, h4, table, th, td, tr,
+header, main, footer, aside, nav, section,p{
+	padding: 0px;
+	margin: 0px;
+}
+
+article, aside, nav, main, header, footer, section{
+	display: block;
+}
+
+header{
+	top:0;
+	position: fixed;
+	width: 100%;
+	background-color: rgb(212,122,115);
+	padding: 5px;
+	color: white;
+	vertical-align: text-bottom;
+	z-index: 999;
+}
+
+body{
+	padding-top: 53px;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: helvetica,arial,sans-serif;
+	font-size: 15px;
+}
+
+nav{
+	display: inline-block;
+}
+
+nav li{
+	display: inline;
+	margin-right: 10px;
+	font-size: 18px;
+	font-variant: uppercase;
+}
+
+li a{
+	color: white;
+	text-decoration: none;
+}
+
+footer{
+	padding: 1%;
+	clear: both;
+	height: 1%;
+}
+
+.footerList{
+	display: inline;
+	margin-right: 10px;
+	font-size: 12px;
+}
+.footerList li{
+	margin-right: 15px;
+	display: inline;
+}
+
+#lastChange{
+	float:right;
+}
+
+.loginField{
+	display: inline;
+}
+
+.loginField input[type="text"]{
+	font-size: 10px;
+	display: inline;
+}
+
+.link {
+	text-decoration: none;
+	color: rgb(71,115,161);
+}
+
+.companyLogo{
+	padding: 5px;
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.compassSection{
+	padding:10%;
+	height:25%;
+	background-color: rgb(71,115,161);
+}
+.compass{
+	vertical-align: middle;
+	display:inline-block;
+	margin-left: 10%;
+	width:20%;
+}
+
+.compassText{
+	vertical-align: middle;
+	font-weight: lighter;
+	display:inline-block;
+	font-size:28px;
+	margin-left:20%;
+	color:white;
+}
+
+.quickSection{
+	padding:10%;
+	height:25%;
+	background-color: rgb(212,122,115);
+}
+.quick{
+	vertical-align: middle;
+	display:inline-block;
+	margin-left: 15%;
+	width:20%;
+}
+
+.quickText{
+	vertical-align: middle;
+	font-weight: lighter;
+	display:inline-block;
+	font-size:28px;
+	margin-left:5%;
+	color:white;
+}
+
+.search{
+	padding:300px;
+	background-image: url("../media/images/searchStock.jpeg");
+	background-size: 100% auto;
+	text-align: center;
+}
+
+.search input[type="text"]{
+	width: 50%;
+	font-size:22px;
+	margin-top:2.5%;
+	color:grey;
+	text-align: center;
+}
+
+.searchCity{
+	font-size: 32px;
+	font-weight: bold;
+	padding: 50px;
+	text-align: center;
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+	border-spacing: 15px;
+}
+
+th{
+	text-align: left;
+	border-style: none none solid none;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+td{
+	text-align: left;
+	border-style: none none solid none;
+	padding:10px;
+	font-size:; 16px;
+	font-weight: lighter;
+}
+
+.resultSet{
+	color: rgb(71,115,161);
+	background-color: rgb(221,230,206);	
+	padding-bottom: 2.5%;
+}
+
+.resultSet .locationLink{
+	text-decoration: none;
+	color:rgb(212,122,115);
+}
+
+.hiddenPopup{
+	display:none;
+}
+.openPopup{
+	display: block;
+	width: 100%;
+	z-index: 998;
+}
+
+#closeMap{
+	margin-left: 70%;
+	font-size: 20px;
+}
+
+#maps{
+	margin:2.5% auto 2.5% auto;
+}
+	
+.tableAction{
+	display: inline;
+	padding-top:;
+}
+
+.tableAction input[value="Change"]{
+	margin-left:40%;
+}
+
+.inputForm{
+	background-image: url("../media/images/formBack.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding:220px;
+}
+
+.formElements{
+	margin-left: 70%;
+	font-size: 20px;
+	width:40%;
+}
+
+.contact-section{
+	margin-top: 15%;
+	margin-bottom: 15%;
+	margin-left: 5%;
+	display:inline-block;
+	vertical-align: middle;
+}
+
+.maps{
+	margin-left: 25%;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+input[type="text"]{
+	font-size: 18px;
+  	transition: box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="text"].focus {
+  box-shadow: 0 0 3px 1px #969696;
+}
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+	background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+	background-color:#f9f9f9;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 34px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+	background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+	background-color:#e9e9e9;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.popup-position{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+#popup-wrapper {
+    margin: 10% auto;
+    width: 40%;
+}
+#popup-container{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#feedbackQuote{
+	margin: 0;
+	width:100%;
+	height: 100%;
+	background-repeat: no-repeat;
+}
+
+.contactForm{
+	text-align: center;
+	width:100%;
+	margin:auto;
+}
+.contactForm .contactReqInfo {
+    font-size: 80%;
+    color: gray;
+}
+.contactForm p{
+	font-size: 18px;
+	padding-bottom: 0.5%;
+	margin-top: 0.5%;
+}
+
+#contactComment{
+	width: 20%;
+	min-height: 100px;
+}
+

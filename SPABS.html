@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang "de">
+	<head>
+		<meta charset="UTF-8">
+		<title>MME 1</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<link href="./css/style2.css" rel="stylesheet" type="text/css">
+
+	</head>
+	<body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a href="index.html" class="companyLogo">TRAVEX</a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#home">HOME<span class="sr-only">(current)</span></a></li>
+                            <li><a href="#discover">DISCOVER</a></li>
+                            <li><a href="#contribute">CONTRIBUTE</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        <main>	
+			<img src="media/images/Back.png" width="100%" height="auto">
+			<div class="compassSection">
+				<img class="compass" src="media/images/compass.svg">
+				<div class="compassText"> 
+					Go somewhere new and experience<br>
+					the world around you through the eyes<br>
+					of a stranger
+					<br><br>
+					Never stop exploring
+				</div>
+			</div>
+			<div class="quickSection">
+				<div class="quickText"> 
+					Quickly choose from wide range of<br>
+					different, personal and "ready to leave"<br>
+					travel plans.
+				</div>
+				<img class="quick" src="media/images/clock.SVG">
+			</div>
+            			<div>
+				<form class="search"action="./php/action_page.php" autocomplete="on">
+					<input type="text" name="searchPlace" placeholder="Where do you want to go?" maxlength="64" autocomplete="off" required>
+					<br><br>
+					<input class="myButton" type="submit" value="Go for it!">
+				</form>
+			</div>
+			<div class="resultSet">
+				<p class="searchCity">Journeys made for Barcelona</p>
+				<table>
+					<tr>
+						<th scope="col">Name</th>
+						<th scope="col">Location</th>
+						<th scope="col">Time of the year</th>
+						<th scope="col">Price</th>
+						<th scope="col">Creator</th>
+						<th scope="col">Rating</th>
+					</tr>
+					<tr>
+						<td scope="row">Barcelona - The new Way</td>
+						<td><a  class="locationLink" href="javascript:void(0)" >Barcelona</a>
+						</td>
+						<td>"Date"</td>
+						<td>800 p.P.</td>
+						<td>
+							<a class="link" href="00000001.html" >MikeTheMan</a>
+						</td>
+						<td>"include Star Rating here"</td>
+					</tr>
+					<tr>
+						<td scope="row">Barcelona - Catalan Culture</td>
+						<td><a  class="locationLink" href="javascript:void(0)" >Barcelona</a></td>
+						<td>"Date"</td>
+						<td>750 p.P.</td>
+						<td>
+							<a class="link" href="User00000002.html" >FriendlyAlex</a>
+						</td>
+						<td>"include Star Rating here"</td>
+					</tr>
+					<tr>
+						<td scope="row">Barcelona - Nightlife/Highlife</td>
+						<td><a  class="locationLink" href="javascript:void(0)" >Barcelona</a></td>
+						<td>"Date"</td>
+						<td>1700 p.P.</td>
+						<td>
+							<a class="link" href="User00000003.html" >JasonBason</a>
+						</td>
+						<td>"include Star Rating here"</td>
+					</tr>
+					<tr>
+						<td scope="row">Barcelona - Backpacker Style</td>
+						<td><a  class="locationLink" href="javascript:void(0)" >Barcelona</a></td>
+						<td>"Date"</td>
+						<td>350 p.P.</td>
+						<td>
+							<a class="link" href="User00000003.html" >GoNow</a>
+						</td>
+						<td>"include Star Rating here"</td>
+					</tr>
+					<tr>
+						<td scope="row">Barcelona - See all the Churches</td>
+						<td><a  class="locationLink"  href="javascript:void(0)" >Barcelona</a></td>
+						<td>"Date"</td>
+						<td>650 p.P.</td>
+						<td>
+							<a class="link" href="User00000003.html" >PhilippVanDeHaag</a>
+						</td>
+						<td>"include Star Rating here"</td>
+					</tr>
+				</table> 
+
+				<div id="mapPopup" class="hiddenPopup">
+					<button class"myButton" id="closeMap">X</button>
+					<div id="maps" style="width:500px;height:380px;"></div>
+				</div>
+				<script src="./js/popupTable.js"></script>
+				
+				<div class="tableAction">
+						<input class="myButton" type="button" value="Change" >
+						<input class="myButton" type="button" value="Delete">
+				</div>
+			</div>
+            <form class="inputForm" action="./php/action_page.php" autocomplete="on">
+			<div class="formElements">
+			What would you like do call it?<br>
+			<input type="text" name="travelName" maxlength="32" autocomplete="off" required>
+			<br>
+			<br>
+			Where did you go?<br>
+			<input type="text" name="placeName" required><br>
+			<br>
+			When did you go?<br>
+			<div>
+				<select name="day" id="day" onchange="" size="1">
+					<option value="01">01</option>
+				    <option value="02">02</option>
+				    <option value="03">03</option>
+				    <option value="04">04</option>
+				    <option value="05">05</option>
+				    <option value="06">06</option>
+				    <option value="07">07</option>
+				    <option value="08">08</option>
+				    <option value="09">09</option>
+				    <option value="10">10</option>
+				    <option value="11">11</option>
+				    <option value="12">12</option>
+				    <option value="13">13</option>
+				    <option value="14">14</option>
+				    <option value="15">15</option>
+				    <option value="16">16</option>
+				    <option value="17">17</option>
+				    <option value="18">18</option>
+				    <option value="19">19</option>
+				    <option value="20">20</option>
+				    <option value="21">21</option>
+				    <option value="22">22</option>
+				    <option value="23">23</option>
+				    <option value="24">24</option>
+				    <option value="25">25</option>
+				    <option value="26">26</option>
+				    <option value="27">27</option>
+				    <option value="28">28</option>
+				    <option value="29">29</option>
+				    <option value="30">30</option>
+				    <option value="31">31</option>	   
+				</select>
+				<select name="month" id="month" onchange="" size="1">
+	    			<option value="01">January</option>
+	    			<option value="02">February</option>
+	    			<option value="03">March</option>
+	    			<option value="04">April</option>
+	    			<option value="05">May</option>
+	    			<option value="06">June</option>
+	    			<option value="07">July</option>
+	    			<option value="08">August</option>
+	    			<option value="09">September</option>
+	    			<option value="10">October</option>
+	    			<option value="11">November</option>
+	    			<option value="12">December</option>
+				</select>
+			</div>
+			<br>
+			<br>
+			How much did you pay?
+			<br>
+			<select name="price" id="price" onchange="" size="1">
+				<option value="01">0-50€</option>
+				<option value="01">50-250€</option>
+				<option value="01">250-500€</option>
+				<option value="01">500-750€</option>
+				<option value="01">750-100€</option>
+				<option value="01">1000-1500€</option>
+				<option value="01">1500-2000€</option>
+				<option value="01">2000+</option>
+			</select>
+			<br>
+			<br>
+			<input class="myButton" type="submit" value="Submit">
+			</div>
+		</form>
+            <div class="contact-section">
+				<h2>Contact Us:</h2>
+				<br>
+				<br>
+				TRAVEX Inc. <br>
+				401-675 Campus Dr<br>
+				CA 94305 Stanford<br>
+				United States of America<br><br>
+				<a class="link" href="mailto:johannes@ebelingfs.de?subject=Travex Support">johannes@ebelingfs.de</a>
+		</div>
+            <section class="maps">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3168.751800733914!2d-122.1731936!3d37.419341!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1444401629421" width="640" height="480" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</section>
+            <img id="feedbackQuote" src="media/images/feedbackQuote.png">
+            <form class="contactForm" action="./php/action_page.php" autocomplete="on">
+                <p class="contactReqInfo">Required fields are marked with '*'</p>
+                <p>Your Name <span class="contactReqInfo">*</span> :</p>
+                <input id="contactName" type="text" name="ContactName" maxlength="32" required>
+                <br>
+                <br>
+                <p>Repeat Your Name <span class="contactReqInfo">*</span> :</p>
+                <input id="contactNameRe" type="text" name="ContactName" maxlength="32" required>
+                <br>
+                <br>
+                <p>Your E-Mail Adress :</p>
+                <input id="contactEMail" type="text" name="ContactEMail">
+                <br>
+                <br>
+                <p>Your Message <span class="contactReqInfo">*</span> :</p>
+                <textarea id="contactComment" name="ContactComment"></textarea>
+                <br>
+                <br>
+                <input class="myButton" type="submit" value="Submit" >
+            </form>            
+		</main>
+		<footer>
+			<ul class="footerList">
+				<li><a class="link" href="mailto:johannes@ebelingfs.de?subject=Travex Support">E-Mail</a></li>
+				<li><a id="newsletter" class="link" href="javascript:void(0)">Newsletter</a></li>
+				<li><a class="link" href="impressum.html">Impressum</a></li>
+				<li id="lastChange"> Letzte Änderung 30.10.2015</li>
+			</ul>
+		</footer>
+        <div id="emailpopup" class="popup-position">
+            <div id="popup-wrapper">
+                <div id="popup-container">
+                    <p>Subscribe to the Newsletter</p>
+                    <br>
+                    <form action="./php/emailNewsletter.php" method="post"  id="popup-form">
+                        <input type="Text" name="emailNewsletter" placeholder="Your email address" id="emailInput" required>
+                        <input class="myButton" type="submit" value="subscribe" >
+                    </form>
+                    <br>
+                    <button class="myButton" id="popup-closebutton">Close</button>
+                </div>
+            </div>
+        </div>
+        <script src="./js/popupNL.js"></script>
+	</body>
+</html>
