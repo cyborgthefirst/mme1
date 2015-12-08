@@ -68,12 +68,19 @@ footer{
 }
 
 .loginField{
+	margin-left: 25%;
 	display: inline;
+	font-size: 10px;
 }
 
 .loginField input[type="text"]{
 	font-size: 10px;
 	display: inline;
+	width:6%;
+}
+
+#loginButton{
+	font-size: 11px;
 }
 
 .link {
@@ -336,3 +343,11 @@ input[type="text"].focus {
 	min-height: 100px;
 }
 
+#price{
+	width: 200px;
+}
+
+#price-menu{
+	width: 200px;
+	font-size: 11px;
+}

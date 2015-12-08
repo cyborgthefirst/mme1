@@ -1,3 +1,4 @@
+
 document.getElementById('Tpopup-closebutton').addEventListener("click", closePopup, false);
 
 document.addEventListener('change', startWait, false);
