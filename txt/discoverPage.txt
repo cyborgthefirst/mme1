@@ -1,0 +1,84 @@
+<div>
+    <form class="search"action="./php/action_page.php" autocomplete="on">
+        <input type="text" name="searchPlace" placeholder="Where do you want to go?" maxlength="64" autocomplete="off" required>
+        <br><br>
+        <input class="myButton" type="submit" value="Go for it!">
+    </form>
+</div>
+<div class="resultSet">
+    <p class="searchCity">Journeys made for Barcelona</p>
+    <table>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Location</th>
+            <th scope="col">Time of the year</th>
+            <th scope="col">Price</th>
+            <th scope="col">Creator</th>
+            <th scope="col">Rating</th>
+        </tr>
+        <tr>
+            <td scope="row">Barcelona - The new Way</td>
+            <td><a  class="locationLink" href="javascript:void(0)" >Barcelona</a>
+            </td>
+            <td>"Date"</td>
+            <td>800 p.P.</td>
+            <td>
+                <a class="link" href="00000001.html" >MikeTheMan</a>
+            </td>
+            <td>"include Star Rating here"</td>
+        </tr>
+        <tr>
+            <td scope="row">Barcelona - Catalan Culture</td>
+            <td><a  class="locationLink" href="javascript:void(0)" >Barcelona</a></td>
+            <td>"Date"</td>
+            <td>750 p.P.</td>
+            <td>
+                <a class="link" href="User00000002.html" >FriendlyAlex</a>
+            </td>
+            <td>"include Star Rating here"</td>
+        </tr>
+        <tr>
+            <td scope="row">Barcelona - Nightlife/Highlife</td>
+            <td><a  class="locationLink" href="javascript:void(0)" >Barcelona</a></td>
+            <td>"Date"</td>
+            <td>1700 p.P.</td>
+            <td>
+                <a class="link" href="User00000003.html" >JasonBason</a>
+            </td>
+            <td>"include Star Rating here"</td>
+        </tr>
+        <tr>
+            <td scope="row">Barcelona - Backpacker Style</td>
+            <td><a  class="locationLink" href="javascript:void(0)" >Barcelona</a></td>
+            <td>"Date"</td>
+            <td>350 p.P.</td>
+            <td>
+                <a class="link" href="User00000003.html" >GoNow</a>
+            </td>
+            <td>"include Star Rating here"</td>
+        </tr>
+        <tr>
+            <td scope="row">Barcelona - See all the Churches</td>
+            <td><a  class="locationLink"  href="javascript:void(0)" >Barcelona</a></td>
+            <td>"Date"</td>
+            <td>650 p.P.</td>
+            <td>
+                <a class="link" href="User00000003.html" >PhilippVanDeHaag</a>
+            </td>
+            <td>"include Star Rating here"</td>
+        </tr>
+    </table> 
+
+    <div id="mapPopup" class="hiddenPopup">
+        <button class"myButton" id="closeMap">X</button>
+        <div id="maps" style="width:500px;height:380px;"></div>
+    </div>
+
+    <script src="./js/popupTable.js"></script>
+
+
+    <div class="tableAction">
+            <input class="myButton" type="button" value="Change" >
+            <input class="myButton" type="button" value="Delete">
+    </div>
+</div>
