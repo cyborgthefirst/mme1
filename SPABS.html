@@ -36,7 +36,7 @@
                             <li><a href="#home" id="homeLink">HOME<span class="sr-only">(current)</span></a></li>
                             <li><a href="#discover" id="discoverLink">DISCOVER</a></li>
                             <li><a href="#contribute" id="contributeLink">CONTRIBUTE</a></li>
-                            <li><a href="#contact">CONTACT</a></li>
+                            <li><a href="#contact" id="contactLink">CONTACT</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
@@ -45,50 +45,14 @@
             <div id="homePage"></div>
             <div id="discoverPage"></div>
             <div id="contributePage"></div>
-            <div id="contactPage">
-                <img id="feedbackQuote" src="media/images/feedbackQuote.png">
-                <form class="contactForm" action="./php/action_page.php" autocomplete="on">
-                    <p class="contactReqInfo">Required fields are marked with '*'</p>
-                    <p>Your Name <span class="contactReqInfo">*</span> :</p>
-                    <input id="contactName" type="text" name="ContactName" maxlength="32" required>
-                    <br>
-                    <br>
-                    <p>Repeat Your Name <span class="contactReqInfo">*</span> :</p>
-                    <input id="contactNameRe" type="text" name="ContactName" maxlength="32" required>
-                    <br>
-                    <br>
-                    <p>Your E-Mail Adress :</p>
-                    <input id="contactEMail" type="text" name="ContactEMail">
-                    <br>
-                    <br>
-                    <p>Your Message <span class="contactReqInfo">*</span> :</p>
-                    <textarea id="contactComment" name="ContactComment"></textarea>
-                    <br>
-                    <br>
-                    <input class="myButton" type="submit" value="Submit" >
-                </form>            
-            </div>
-            <div id="impressumPage">
-                <div class="contact-section">
-                    <h2>Contact Us:</h2>
-                    <br>
-                    <br>
-                    TRAVEX Inc. <br>
-                    401-675 Campus Dr<br>
-                    CA 94305 Stanford<br>
-                    United States of America<br><br>
-                    <a class="link" href="mailto:johannes@ebelingfs.de?subject=Travex Support">johannes@ebelingfs.de</a>
-                 </div>
-                <section class="maps">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3168.751800733914!2d-122.1731936!3d37.419341!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1444401629421" width="640" height="480" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </section>
-            </div>
+            <div id="contactPage"></div>
+            <div id="impressumPage"></div>
 		</main>
 		<footer>
 			<ul class="footerList">
 				<li><a class="link" href="mailto:johannes@ebelingfs.de?subject=Travex Support">E-Mail</a></li>
 				<li><a id="newsletter" class="link" href="javascript:void(0)">Newsletter</a></li>
-				<li><a class="link" href="impressum.html">Impressum</a></li>
+				<li><a class="link" href="#impressum" id="impressumLink">Impressum</a></li>
 				<li id="lastChange"> Letzte Änderung 30.10.2015</li>
 			</ul>
 		</footer>
