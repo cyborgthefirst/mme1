@@ -33,7 +33,6 @@ $(document).ready(function(){
     var impressumPage = loadableHTMLContent("impressumPage","txt/impressumPage.txt");
     
     $('#homeLink').click(function(){
-        window.alert("aaa");
         if(!homePage.getLoaded()){
             homePage.loadHTML();
         }
@@ -49,17 +48,16 @@ $(document).ready(function(){
         }
     })    
     $('#contactLink').click(function(){
-        if(!contributePage.getLoaded()){
-            contributePage.loadHTML();
-            if(contributePage.getLoaded()){
+        if(!contactPage.getLoaded()){
+            contactPage.loadHTML();
+            if(contactPage.getLoaded()){
                window.dispatchEvent(new Event('customCFVStart'));
             }
         }
     })    
     $('#impressumLink').click(function(){
-        if(!contributePage.getLoaded()){
-            contributePage.loadHTML();
+        if(!impressumPage.getLoaded()){
+            impressumPage.loadHTML();
         }
     })
-
 });
