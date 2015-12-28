@@ -10,7 +10,8 @@
             //controller: 'CountryDetailCtrl'
         }).
         when("/discover",{
-            templateUrl: "contentPage/discoverPage.html"
+            templateUrl: "contentPage/discoverPage.html",
+            controller: "discoverTableCtrl"
         }).
         when("/contribute",{
             templateUrl: "contentPage/contributePage.html"
@@ -25,8 +26,10 @@
             redirectTo : "/home"
         });
     });
-    ContentApp.controller('CountryDetailCtrl', function ($scope, $routeParams){
-        console.log($routeParams);
+    ContentApp.controller('discoverTableCtrl', function ($scope, $http){
+        $http.get("journeysExample.json").success(function(data){
+            $scope.journeys = data;
+        })
     });
     //ContentApp.name = "John";
 

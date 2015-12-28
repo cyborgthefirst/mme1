@@ -16,6 +16,17 @@
             <th scope="col">Creator</th>
             <th scope="col">Rating</th>
         </tr>
+        <tr ng-repeat="journey in journeys">
+            <td scope="row">{{journey.name}}</td>
+            <td><a  class="locationLink" href="{{journey.creatorUrl}}" >{{journey.location}}</a></td>
+            <td>{{journey.date}}</td>
+            <td>{{journey.price}}</td>
+            <td>
+                <a class="link" href="{{journey.creatorUrl}}" >{{journey.creator}}</a>
+            </td>
+            <td>{{journey.stars}}</td>
+        </tr>
+        <!--
         <tr>
             <td scope="row">Barcelona - The new Way</td>
             <td><a  class="locationLink" href="javascript:void(0)" >Barcelona</a>
@@ -67,15 +78,16 @@
             </td>
             <td>"include Star Rating here"</td>
         </tr>
+        -->
     </table> 
 
-    <div id="mapPopup" class="hiddenPopup">
+<!--    <div id="mapPopup" class="hiddenPopup">
         <button class"myButton" id="closeMap">X</button>
         <div id="maps" style="width:500px;height:380px;"></div>
     </div>
 
     <script src="./js/popupTable.js"></script>
-
+-->
 
     <div class="tableAction">
             <input class="myButton" type="button" value="Change" >

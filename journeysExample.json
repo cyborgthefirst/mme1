@@ -1,0 +1,58 @@
+[
+    { 
+        "id": 1,
+        "name": "Barcelona - The new Way",
+        "location": "Barcelona",
+        "locationUrl": "javascript:void(0)",
+        "date": "date",
+        "price": "800 p.P.",
+        "creator": "MikeTheMan",
+        "creatorUrl": "javascript:void(0)",
+        "stars": 4
+    },
+    { 
+        "id": 2,
+        "name": "Barcelona - Catalan Culture",
+        "location": "Barcelona",
+        "locationUrl": "javascript:void(0)",
+        "date": "date",
+        "price": "750 p.P.",
+        "creator": "FriendlyAlex",
+        "creatorUrl": "javascript:void(0)",
+        "stars": 4
+    },
+    { 
+        "id": 3,
+        "name": "Barcelona - Nightlife/Highlife",
+        "location": "Barcelona",
+        "locationUrl": "javascript:void(0)",
+        "date": "date",
+        "price": "1700 p.P.",
+        "creator": "JasonBason",
+        "creatorUrl": "javascript:void(0)",
+        "stars": 4
+    },
+    { 
+        "id": 4,
+        "name": "Barcelona - Backpacker Style",
+        "location": "Barcelona",
+        "locationUrl": "javascript:void(0)",
+        "date": "date",
+        "price": "750 p.P.",
+        "creator": "FriendlyAlex",
+        "creatorUrl": "javascript:void(0)",
+        "stars": 4
+    },
+    { 
+        "id": 5,
+        "name": "Barcelona - See all the Churches",
+        "location": "Barcelona",
+        "locationUrl": "javascript:void(0)",
+        "date": "date",
+        "price": "750 p.P.",
+        "creator": "FriendlyAlex",
+        "creatorUrl": "javascript:void(0)",
+        "stars": 4
+    }
+    
+]
