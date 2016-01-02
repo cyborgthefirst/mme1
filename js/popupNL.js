@@ -1,10 +1,11 @@
+/*
 document.getElementById('newsletter').addEventListener("click", openPopup, false);
 document.getElementById('popup-closebutton').addEventListener("click", closePopup, false);
 
 var email = document.getElementById('emailInput');
     
 email.addEventListener('keyup', checkEmailValidity, false);
-
+*/
 function openPopup() {
     document.getElementById('emailpopup').style.display = 'block';
 }
