@@ -31,6 +31,5 @@
             $scope.journeys = data;
         })
     });
-    //ContentApp.name = "John";
 
 //});

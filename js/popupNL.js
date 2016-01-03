@@ -6,6 +6,12 @@ var email = document.getElementById('emailInput');
     
 email.addEventListener('keyup', checkEmailValidity, false);
 */
+
+$(document).ready(function(){
+    var email = document.getElementById('emailInput');
+    $('#emailInput').keyup(checkEmailValidity(email));
+});
+
 function openPopup() {
     document.getElementById('emailpopup').style.display = 'block';
 }
@@ -13,7 +19,7 @@ function closePopup() {
     document.getElementById('emailpopup').style.display = 'none';
 }
 
-function checkEmailValidity() {
+function checkEmailValidity(email) {
     //regex-validation
 
     var error = "";
