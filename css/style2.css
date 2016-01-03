@@ -36,6 +36,15 @@ nav{
 	display: inline-block;
 }
 
+.navbar{
+    background-color: rgb(212,122,115);
+    border-bottom-color: rgb(211,121,114);
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
 nav li{
 	display: inline;
 	margin-right: 10px;
@@ -91,6 +100,11 @@ footer{
 	font-weight: bold;
 }
 
+/*screensize dirty fix*/
+.container{
+    width: 970px;
+}
+
 .compassSection{
 	padding:10%;
 	height:25%;
@@ -99,8 +113,6 @@ footer{
 .compass{
 	vertical-align: middle;
 	display:inline-block;
-	margin-left: 10%;
-	width:20%;
 }
 
 .compassText{
@@ -108,7 +120,6 @@ footer{
 	font-weight: lighter;
 	display:inline-block;
 	font-size:28px;
-	margin-left:20%;
 	color:white;
 }
 
@@ -120,8 +131,6 @@ footer{
 .quick{
 	vertical-align: middle;
 	display:inline-block;
-	margin-left: 15%;
-	width:20%;
 }
 
 .quickText{
@@ -129,7 +138,6 @@ footer{
 	font-weight: lighter;
 	display:inline-block;
 	font-size:28px;
-	margin-left:5%;
 	color:white;
 }
 
